@@ -303,6 +303,11 @@ figure img{
 
 
 @media (max-width: 991px){
+
+    figure img{
+        margin-top: 3.2rem;
+    }
+
     section{
         padding-top: 0;
         padding-bottom: 0;
