@@ -336,6 +336,13 @@ figure img{
     -webkit-backdrop-filter: blur(10px);
 }
 
+@media (max-width: 991px){
+    #numbers .row div:not(:last-of-type) .card.small{
+        margin-top: 5.6rem;
+        margin-bottom: 5.6rem;
+    }
+}
+
 
 
 .card.gray{
@@ -346,7 +353,7 @@ figure img{
     background: #FED442;
 }
 
-.card.centered{
+.centered{
     text-align: center;
 }
 
@@ -426,7 +433,7 @@ figure img{
 
 /* FAQs */
 
-#faqs{
+.faqs{
     background: no-repeat top center/100% url("../img/bg_blurred.jpg");
     background-size: cover;
     position: relative;
@@ -438,13 +445,17 @@ figure img{
 
 
 @media (min-width: 992px){
-    #faqs{
+    .faqs{
         padding-bottom: 12rem;
         background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 20%), no-repeat top center/100% url("../img/bg_blurred.jpg") fixed;
         box-shadow: none;
     }
 
-    #faqs h1{
+    .faqs.timeline{
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 20%), linear-gradient(0deg, rgba(255,255,255,0) 90%, rgba(255,255,255,1) 99%),no-repeat top center/100% url("../img/bg_blurred.jpg") fixed;
+    }
+
+    .faqs h1{
         font-size: 5.6rem;
         line-height: 1;
         font-family: "axiformabold",Helvetica,Helvetica Neue,Arial;
@@ -521,4 +532,10 @@ figure img{
     width: auto;
     margin: auto;
     display: inline-block;
+}
+
+
+#numbers{
+    position: relative;
+    z-index: 999;
 }
