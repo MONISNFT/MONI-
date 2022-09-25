@@ -315,6 +315,41 @@ figure img{
 }
 
 
+#hero .hero-image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero figure{
+    position: relative;
+    width: auto;
+}
+
+#hero .animation{
+    background: url("../img/hero.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation-name: sprite; 
+    animation-duration: 4s;
+    animation-timing-function: steps(6);
+    animation-iteration-count: infinite;
+}
+
+@keyframes sprite {
+    from { background-position: 0px; }
+    to { background-position: -2574px; }
+  }
+
+
+#hero figure img{
+    opacity: 0;
+}
+
 
 /* Card */
 
