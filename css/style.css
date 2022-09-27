@@ -297,6 +297,10 @@ figure img{
 @media (min-width: 992px){
     figure img{
         width: auto;
+    }
+
+    #hero figure img{
+        width: auto;
         height: 70vh;
         min-height: 720px;
     }
