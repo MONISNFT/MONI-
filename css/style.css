@@ -329,6 +329,7 @@ figure img{
 
 #hero .animation{
     background: url("../img/hero.png");
+    background-repeat: no-repeat;
     position: absolute;
     width: 100%;
     height: 100%;
