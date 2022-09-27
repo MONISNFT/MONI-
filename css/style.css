@@ -298,6 +298,7 @@ figure img{
     figure img{
         width: auto;
         height: 70vh;
+        min-height: 720px;
     }
 }
 
