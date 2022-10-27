@@ -357,6 +357,14 @@ figure img{
     opacity: 0;
 }
 
+@media (max-width: 991px){
+    #hero figure img{
+        opacity: 1;
+    }
+    #hero .animation{
+        opacity: 0;
+    }
+}
 
 /* Card */
 
