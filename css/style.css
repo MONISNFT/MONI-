@@ -379,13 +379,22 @@ figure img{
 }
 
 .card.small figure img{
-    width: 75%;
+    width: 100%;
 }
 
 .card.small div{
-    width: 50%;
     margin: 4rem auto;
 }
+
+@media (min-width: 992px){
+    .card.small div{
+        width: 50%;
+    }
+    .card.small figure img{
+        width: 75%;
+    }
+}
+
 
 .card.large{
     padding: 8rem 7.2rem;
@@ -401,6 +410,7 @@ figure img{
         margin-bottom: 5.6rem;
     }
 }
+
 
 
 
