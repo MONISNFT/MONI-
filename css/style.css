@@ -378,6 +378,15 @@ figure img{
     box-shadow: 0 4px 24px 0 rgba(0,0,0,0.15);
 }
 
+.card.small figure img{
+    width: 75%;
+}
+
+.card.small div{
+    width: 50%;
+    margin: 4rem auto;
+}
+
 .card.large{
     padding: 8rem 7.2rem;
     margin: 5.6rem 0;
@@ -392,6 +401,8 @@ figure img{
         margin-bottom: 5.6rem;
     }
 }
+
+
 
 
 
@@ -492,6 +503,9 @@ figure img{
     box-shadow:inset 0 40px 40px 0 #fff;
 }
 
+.highlights{
+    padding-bottom: 12rem;
+}
 
 
 @media (min-width: 992px){
