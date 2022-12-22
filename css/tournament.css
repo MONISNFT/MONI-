@@ -1,0 +1,147 @@
+
+#hero{
+  overflow: hidden;
+}
+
+#hero .container::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 300px;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../img/clouds.png);
+  background-size: auto 100%;
+  background-position: center;
+  overflow: hidden;
+}
+
+
+
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+.tournament #hero figure img{
+  opacity: 1;
+  width: 60%;
+  margin: 10% auto 15%;
+  height: auto;
+  min-height: initial;
+}
+
+.tournament #hero .col-lg-12::before,
+.tournament #hero::after{
+  display: none;
+}
+
+.tournament #hero .hero-image{
+  flex-wrap: wrap;
+}
+
+.tournament #hero .hero-image h1{
+  margin: 10% auto;
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+.tournament_matches .vs{
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.2);
+  background-size: cover;
+  border-radius: 24px;
+  padding-bottom: 40px;
+}
+
+.tournament_matches .vs::before{
+  content: "";
+  background: url(../img/vs@8x.png);
+  width: 102px;
+  height: 102px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(-24deg) rotateZ(0deg) translateX(-50%) translateY(-10%) translateZ(0px) skewX(0deg) skewY(0deg);
+  z-index: 99;
+}
+
+.tournament_matches .vs img{
+  width: 50%;
+  height: auto;
+  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(-24deg) rotateZ(0deg) translateX(-20px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+}
+
+.tournament_matches .vs img:first-child{
+  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(24deg) rotateZ(0deg) translateX(20px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+}
+
+.tournament_matches .vs img::before{
+  content: "";
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.community_winner{
+  border-radius: 24px;
+  background: #1DA1F2;
+  color: #fff;
+  padding: 16px;
+  box-sizing: border-box;
+  margin-top: 32px;
+}
+
+
+
+#intro h1{
+  font-size: 4.5vw;
+  line-height: 1.2;
+  text-align: center;
+}
+
+#intro p{
+  font-size: 2vw;
+  text-align: center;
+  line-height: 1.4;
+}
+
+
+
+
+
+#about{
+  background: rgb(183,215,249);
+  background: linear-gradient(180deg, rgba(183,215,249,1) 0%, rgba(255,255,255,1) 100%);
+background-size: cover;
+position: relative;
+z-index: 99;
+padding-top: 12rem;
+-webkit-box-shadow: 0 -80px 80px 10px #b7d7f9;
+box-shadow: 0 -80px 80px 10px #b7d7f9;
+}
