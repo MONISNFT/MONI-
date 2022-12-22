@@ -577,37 +577,31 @@ button:not(:disabled) {
     z-index: 10;
     cursor: pointer;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--swiper-navigation-color, var(--swiper-theme-color));
-    min-width: 68px;
-    border-radius: 32px;
-    background: #FED442;
+    width: 56px;
+    height: 56px;
+    background: #FED442 url(../img/game_screenshots/arrow_trans.svg);
+    background-size: cover;
+    border-radius: 100%;
 }
-.swiper-button-next:after,
-.swiper-button-prev:after {
-    font-family: swiper-icons;
-    font-size: var(--swiper-navigation-size);
-    text-transform: none !important;
-    letter-spacing: 0;
-    text-transform: none;
-    font-variant: initial;
-    line-height: 1;
+
+.swiper-button-next{
+  transform: rotate(-90deg);
 }
+
+.swiper-button-prev{
+  transform: rotate(90deg);
+}
+
 .swiper-button-prev {
     left: 10px;
     right: auto;
 }
-.swiper-button-prev:after {
-    content: "prev";
-}
+
 .swiper-button-next {
     right: 10px;
     left: auto;
 }
-.swiper-button-next:after {
-    content: "next";
-}
+
 @keyframes swiper-preloader-spin {
     100% {
         transform: rotate(360deg);
@@ -703,8 +697,40 @@ button:not(:disabled) {
 }
 
 
+#faqs{
+  background-image: url(../img/game_screenshots/stars_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+  box-shadow: none;
+}
+
+#faqs::before,
+#faqs::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20rem;
+  transform: translateY(-50%);
+  background: url(../img/game_screenshots/clouds.png);
+  background-size: auto 100%;
+}
+
+#faqs::after{
+  bottom: 0;
+  top: auto;
+  transform: translateY(50%);
+}
 
 
+#faqs h2{
+  margin-bottom: 8rem;
+}
 
 .card.yellow.about_the_game{
   background-image: url(../img/game_screenshots/about_the_game_bg.png);
@@ -736,8 +762,133 @@ nav a{
   color: white;
 }
 
-.small{
+.xta_small{
   font-size: 10px;
   line-height: normal;
+
+}
+
+
+
+
+
+
+
+
+
+.faq-entries {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+ol.faq-entries .faq-item {
+  padding-left: 0;
+  margin: 0;
+  counter-increment: step-counter;
+}
+
+.faq-entries .faq-question {
+  cursor: pointer;
+  position: relative;
+  background-color: #FED442;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  border-radius: 1.6rem;
+  padding: 2.4rem 3.2rem;
+  box-shadow: 0 4px 24px 0 rgb(0 0 0 / 15%);
+  font-size: 2.4rem;
+  transition: color .3s ease;
+  margin: 1.6rem auto;
+}
+
+.faq-entries .faq-question::after{
+  content: "";
+  position: absolute;
+  right: 1.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 56px;
+  height: 56px;
+  background: url(../img/game_screenshots/arrow.svg);
+  background-size: cover;
+  transition: transform .8s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.faq-entries .faq-question.active::after{
+  transform: translateY(-50%) rotate(180deg);
+}
+
+
+
+
+.panel {
+  padding: 0 2.4rem 3.2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease-out;
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+ol.faq-entries .faq-question .question {
+  display: inline-block;
+  max-width: 90%;
+  padding-left: 0.5rem;
+  color: #2E3242;
+  transition: color .3s ease;
+}
+
+.panel li{
+  list-style: initial;
+  margin-left: 1.6rem;
+}
+
+
+#support_us{
+  background: url(../img/bg_blurred.jpg);
+  background-size: cover;
+  box-shadow:inset 0 -100px 200px 100px rgba(255,255,255,1);
+}
+
+.highlights{
+  padding-bottom: 0rem;
+}
+
+@media (max-width: 1023px){
+
+  #hero{
+    background-image: url(../img/game_screenshots/2.jpg);
+  }
+
+  #hero .hero-image{
+    display: none;
+  }
+  
+  #hero nav{
+    padding-top: 0;
+    padding-bottom: 4rem;
+  }
+
+  #hero nav li:first-child{
+    margin-bottom: 15vh;
+  }
+
+  #slideshow .row{
+    margin-bottom: 6rem;
+  }
+
+  #faqs{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  #faqs::before, #faqs::after{
+    height: 10rem;
+  }
+
+ 
 
 }
