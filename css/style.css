@@ -241,6 +241,7 @@ a:active{
     position: relative;
     padding-top: 5.6rem;
     padding-bottom: 0;
+    overflow: hidden;
 }
 
 
@@ -345,6 +346,7 @@ figure img{
     animation-duration: 4s;
     animation-timing-function: steps(6);
     animation-iteration-count: infinite;
+    transform: translateY(6%);
 }
 
 @keyframes sprite {
@@ -511,7 +513,50 @@ figure img{
     z-index: 0;
     padding-top: 12rem;
     box-shadow:inset 0 40px 40px 0 #fff;
+    position: relative;
+    z-index: 99;
 }
+
+.faqs .products{
+    margin-top: -16%;
+}
+
+
+.faqs .products .card.small div{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.faqs .products .card.small .icon{
+    width: 96px;
+    height: 96px;
+    margin: 2.4rem auto 4rem;
+}
+
+.faqs .products .icon svg{
+    width: 100%;
+    height: auto;
+    stroke-width: 2;
+}
+
+
+.faqs .products .btn{
+    margin-top: 5.6rem;
+}
+
+.faqs .products p:last-of-type{
+    margin-bottom: 0;
+}
+
+
+
+@media (max-width: 1199px){
+    .card.small{
+        margin-bottom: 4rem;
+    }
+}
+
 
 .highlights{
     padding-bottom: 12rem;
