@@ -574,7 +574,8 @@ figure img{
         background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 20%), linear-gradient(0deg, rgba(255,255,255,0) 90%, rgba(255,255,255,1) 99%),no-repeat top center/100% url("../img/bg_blurred.jpg") fixed;
     }
 
-    .faqs h1{
+    .faqs h1,
+    h1.jumbo{
         font-size: 5.6rem;
         line-height: 1;
         font-family: "axiformabold",Helvetica,Helvetica Neue,Arial;
