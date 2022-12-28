@@ -659,3 +659,22 @@ figure img{
     position: relative;
     z-index: 999;
 }
+
+
+.card.large.tournament_card{
+    background: url(../img/card_tournament_bg.png);
+    background-size: cover;
+    color: #fff;
+}
+
+.card.large.tournament_card p{
+    color: #fff;
+}
+
+.card.large.tournament_card h1 img{
+    width: 50%;
+}
+
+.sr_only{
+    display: none;
+}
