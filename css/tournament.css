@@ -1,5 +1,5 @@
 
-#hero.tournament{
+.tournament #hero{
   overflow: hidden;
   background: #FED442;
 }
@@ -413,4 +413,38 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     padding-bottom: 8rem;
   }
   
+}
+
+
+.prizes_list{
+  overflow: auto;
+  border-top: 1px solid #fff;
+}
+
+.prizes_list h2{
+  font-size: 2.4rem;
+  margin-top: 3.2rem;
+}
+
+.card.large .prizes_list p{
+  font-size: 1.4rem;
+}
+
+
+.card.large .prizes_list li{
+  display: block;
+  background: #FED442;
+  padding: 1.6rem 1.6rem;
+  border-radius: 2.4rem;
+  font-size: 2.2rem;
+  font-family: "axiformablack",Helvetica,Helvetica Neue,Arial;
+}
+
+.card.large .prizes_list li:first-of-type{
+  margin-bottom: 1.6rem;
+}
+
+
+.tournament_rules .card.large p{
+  font-size: 1.6rem;
 }
