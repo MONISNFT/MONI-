@@ -1,6 +1,7 @@
 
-#hero{
+#hero.tournament{
   overflow: hidden;
+  background: #FED442;
 }
 
 #hero .container::after{
