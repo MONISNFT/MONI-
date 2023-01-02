@@ -419,6 +419,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .prizes_list{
   overflow: auto;
   border-top: 1px solid #fff;
+  margin-top: 5.6rem;
 }
 
 .prizes_list h2{
@@ -431,13 +432,16 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
-.card.large .prizes_list li{
+.card.large .prizes_list li,
+.callout{
   display: block;
   background: #FED442;
   padding: 1.6rem 1.6rem;
   border-radius: 2.4rem;
   font-size: 2.2rem;
   font-family: "axiformablack",Helvetica,Helvetica Neue,Arial;
+  max-width: 800px;
+  margin: auto;
 }
 
 .card.large .prizes_list li:first-of-type{
