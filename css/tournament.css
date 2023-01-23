@@ -1,4 +1,11 @@
 
+
+section,
+footer{
+  z-index: initial !important;
+  background: transparent;
+}
+
 .tournament #hero{
   overflow: hidden;
   background: #FED442;
