@@ -678,3 +678,8 @@ figure img{
 .sr_only{
     display: none;
 }
+
+
+footer p{
+    font-size: 1.4rem;
+}
