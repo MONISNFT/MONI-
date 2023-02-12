@@ -471,6 +471,10 @@ figure img{
     margin: 5.6rem 0 0 0
 }
 
+.card.large p .btn + .btn {
+    margin-top: 3.2rem;
+}
+
 .card.large h1{
     margin-bottom: 5.6rem;
 }
