@@ -134,6 +134,16 @@ h2{
     }
 }
 
+.xta_small{
+    font-size: 10px;
+    line-height: normal;
+      margin: .8rem 0;
+      color: #4f4f54;
+  }
+  
+  h1.jumbo{
+      line-height: 1.2;
+  }
 
 a,
 a:hover,
@@ -143,6 +153,10 @@ a:active{
     color: #000;
 }
 
+
+.card .btn + .btn{
+    margin-top: 0;
+}
 
 
 .btn{
@@ -686,4 +700,161 @@ figure img{
 
 footer p{
     font-size: 1.4rem;
+}
+
+
+.homepage .utility:first-of-type{
+    margin-top: 8rem;
+}
+
+.homepage .utility:last-of-type{
+    margin-bottom: 12rem;
+}
+
+.homepage .utility h1 + p{
+    margin-bottom: 5.6rem;
+}
+
+.utility h2{
+    background: #f2f6ff;
+    /*background: linear-gradient(90deg, rgba(255,53,254,1) 0%, rgba(251,235,175,1) 100%);
+    color: white;*/
+    background-size: 150%;
+    border-radius: 5.6rem;
+    padding: 1.6rem;
+    box-sizing: border-box;
+    transition: all 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+    display: inline;
+    font-size: 2.4rem;
+}
+
+.homepage .utility h2{
+    background: rgba(255,255,255,.5)
+}
+
+.utility h2 + p{
+    margin-top: 4rem;
+}
+
+.utility .items div div:hover{
+    border: 2px solid #ffc107;
+}
+
+.utility .items div div.active{
+    background: #ffc107;
+}
+
+.utility div div{
+    padding: 2.4rem;
+    box-sizing: border-box;
+}
+
+.utility .icon{
+    width: 100%;
+    max-width: 120px;
+    display: block;
+    margin: auto auto 4rem auto;
+    padding: 0;
+}
+
+.utility svg{
+    width: 100%;
+}
+
+
+
+.homepage .GDS{
+    margin-bottom: 12rem;
+}
+
+.GDS_timeline{
+    display: flex;
+    position: relative;
+    margin-top: 4rem;
+}
+.GDS_timeline > li{
+    width: 25%;
+    position: relative;
+}
+
+.GDS:not(.homepage) .GDS_timeline > li::before{
+    content: "";
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+    background: #fbebaf;
+    z-index: 1;
+    position: relative;
+}
+
+.GDS:not(.homepage) .GDS_timeline > li.check::before{
+    background: #ff35fe url(../img/check.svg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.GDS_timeline > li p,
+.GDS_timeline > li strong{
+    padding: 0 1.6rem;
+    box-sizing: border-box;
+}
+
+.GDS:not(.homepage) .GDS_timeline > li::after{
+    content: "";
+    width: 100%;
+    height: 1.6rem;
+    background: #fbebaf;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    z-index: 0;
+}
+
+.GDS_timeline > li.check::after{
+    background: #ff35fe;
+    background: linear-gradient(270deg, rgba(251,235,175,1) 0%, rgba(255,53,254,1) 100%);
+}
+
+.GDS_timeline > li:first-of-type::after{
+    width: 50% !important;
+    left: 50% !important;
+}
+
+.GDS_timeline > li:last-of-type::after{
+    width: 50% !important;
+}
+
+.GDS_timeline > li strong{
+    margin-top: 2.4rem;
+    display: block;
+    font-size: 1.8rem;
+}
+
+@media (max-width: 767px){
+    .GDS_timeline{
+        display: block;
+    }
+    .GDS_timeline > li{
+        width: 100%;
+    }
+    .GDS_timeline > li::after{
+        border-radius: 2.4rem;
+    }
+}
+
+.GDS_timeline > li ul{
+    padding: 1.6rem;
+    box-sizing: border-box;
+}
+
+.GDS_timeline > li li{
+    position: relative;
+    display: block;
+    background: rgba(255,255,255,.2);
+    padding: .8rem .8rem;
+    border-radius: 1.6rem;
+    margin: 1.6rem 0;
 }
