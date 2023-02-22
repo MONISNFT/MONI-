@@ -711,7 +711,7 @@ footer p{
     margin-bottom: 12rem;
 }
 
-.homepage .utility h1 + p{
+.homepage .utility h1 + p + p{
     margin-bottom: 5.6rem;
 }
 
