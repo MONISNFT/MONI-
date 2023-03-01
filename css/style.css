@@ -624,20 +624,27 @@ figure img{
 
 /* Team */
 
+.team{
+    display: flex;
+}
+
 .team_member{
     width: 100%;
-    display: inline-block;
+    display: block;
     margin-bottom: 5.6rem;
 }
 
-.team_member:last-of-type{
-    margin-bottom: 0;
+@media (max-width: 991px){
+    .team_member:last-of-type{
+        margin-bottom: 0;
+    }
 }
+
+
 
 @media (min-width: 992px){
     .team_member{
         width: 33.33%;
-        margin-bottom: 0;
     }
 }
 
@@ -857,4 +864,20 @@ footer p{
     padding: .8rem .8rem;
     border-radius: 1.6rem;
     margin: 1.6rem 0;
+}
+
+
+.airdrop figure{
+    margin-top: 12rem;
+}
+.airdrop figure img{
+    width: 100%;
+}
+
+.airdrop:last-of-type{
+    margin-bottom: 12rem;
+}
+
+.airdrop .btn{
+    margin-top: 4rem;
 }
