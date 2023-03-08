@@ -808,19 +808,19 @@
     </script>
 
     <script>
-      $(document).ready(function() {
-          // Get the height of the image
-          var imgHeight = $(".gui img").height();
+      $(window).on("load", function() {
+  // Get the height of the image
+  var imgHeight = $(".gui img").height();
 
-          // Apply the height to the parent div
-          $(".gui img").parent().height(imgHeight);
+  // Apply the height to the parent div
+  $(".gui img").parent().height(imgHeight);
 
-          // Update the height on window resize
-          $(window).resize(function() {
-              var imgHeight = $(".gui img").height();
-              $(".gui img").parent().height(imgHeight);
-          });
-      });
+  // Update the height on window resize
+  $(window).resize(function() {
+    var imgHeight = $(".gui img").height();
+    $(".gui img").parent().height(imgHeight);
+  });
+});
     </script>
 
     <script>
