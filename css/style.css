@@ -631,8 +631,12 @@ figure img{
 
 /* Team */
 
-.team{
-    display: flex;
+
+
+@media (min-width: 992px){
+    .team{
+        display: flex;
+    }
 }
 
 .team_member{
@@ -641,11 +645,6 @@ figure img{
     margin-bottom: 5.6rem;
 }
 
-@media (max-width: 991px){
-    .team_member:last-of-type{
-        margin-bottom: 0;
-    }
-}
 
 
 
@@ -743,7 +742,13 @@ footer p{
 }
 
 .homepage .utility h2{
-    background: rgba(255,255,255,.5)
+    background: rgba(255,255,255,.5);
+}
+
+@media (max-width: 1023px){
+    .homepage .utility h2{
+        line-height: 3rem;
+    }
 }
 
 .utility h2 + p{
@@ -878,8 +883,19 @@ footer p{
     margin-top: 12rem;
 }
 .airdrop figure img{
-    width: 100%;
+    width: 66.66%;
+    transform-origin: top center;
+    animation: royalties 5s infinite cubic-bezier(0.37, 0, 0.63, 1);
 }
+
+@keyframes royalties {
+    0%, 100%{
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+  }
 
 .airdrop:last-of-type{
     margin-bottom: 12rem;
@@ -900,12 +916,17 @@ footer p{
     .royalties_items{
         display: flex;
     }
+
+    .royalties_item{
+        display: inline-block;
+        width: 33.33%;
+    }
+    .airdrop figure img{
+        width: 100%%;
+    }
 }
 
-.royalties_item{
-    display: inline-block;
-    width: 33.33%;
-}
+
 
 .utility.description{
     margin-bottom: 5.6rem;

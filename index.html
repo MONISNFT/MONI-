@@ -79,7 +79,7 @@
       <section id="faqs" class="faqs">
         <div class="container">
           <div class="row centered products centered">
-            <div class="col-lg-4">
+            <div class="col-lg-4 product_card">
               <div class="card small">
                 <div class="icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487 487">
@@ -103,15 +103,17 @@
                   </svg>
                 </div>
                 <div>
-                  <h2>NFT <br> Collection </h2>
-                  <p>5000 unique, randomly generated, stylish cats</p>
+                  <div class="description">
+                    <h2>NFT Collection </h2>
+                    <p>5000 unique, randomly generated, stylish cats</p>
+                  </div>
                   <p>
                     <a href="https://nft.onxrp.com/launchpad/details/monidollar/" target="_blank" class="btn">Mint now</a>
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 product_card">
               <div class="card small">
                 <div class="icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487 487">
@@ -123,15 +125,17 @@
                   </svg>
                 </div>
                 <div>
-                  <h2>Moni's Magical Quest</h2>
-                  <p>A Turn-based puzzle-adventure game</p>
+                  <div class="description">
+                    <h2>Moni's Magical Quest</h2>
+                    <p>A Turn-based puzzle-adventure game</p>
+                  </div>
                   <p>
                     <a href="https://monis.wtf/game" target="_blank" class="btn">About the game</a>
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 product_card">
               <div class="card small">
                 <div class="icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487 487">
@@ -143,8 +147,10 @@
                   </svg>
                 </div>
                 <div>
-                  <h2>Sticker <br> Pack </h2>
-                  <p>MONI$ stickers for WhatsApp and iMessage</p>
+                  <div class="description">
+                    <h2>Sticker Pack </h2>
+                    <p>MONI$ stickers for WhatsApp and iMessage</p>
+                  </div>
                   <p>
                     <a href="https://sticker.ly/s/IH0IQV" target="_blank" class="btn">Download now</a>
                   </p>
@@ -165,7 +171,7 @@
             <div id="" class="row utility">
               <div class="col-lg-10 col-lg-push-1 centered">
                 <h1 class="jumbo">Royalties distribution</h1>
-                <h2>25% back to MONI$ holders, 50% in the first month</h2>
+                <h2>25% back to MONI$ holders</h2>
                 <p> 25% of the royalties generated from the sales and mints of our NFTs, starting March 1st, are distributed back to our NFT holders every month based on the number of days they own the NFT. This incentivizes holding onto the NFTs and rewards early adopters, creating a more engaged and loyal community. We want to create a sustainable revenue stream to support the development of the MONI$ Game while giving back to the community that believes in the project. Join the MONI$ community today and start earning rewards for your NFT ownership! </p>
               </div>
             </div>
@@ -462,5 +468,28 @@
         </div>
       </div>
     </footer>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script>
+      // get all elements with class "product_card"
+const cards = document.querySelectorAll(".product_card .card .description");
+
+// find the card with the largest height
+let max_height = 0;
+for (let i = 0; i < cards.length; i++) {
+  const card_height = cards[i].offsetHeight;
+  if (card_height > max_height) {
+    max_height = card_height;
+  }
+}
+
+// set the height of all cards to the max height
+for (let i = 0; i < cards.length; i++) {
+  cards[i].style.height = max_height + "px";
+}
+    </script>
+
+
   </body>
 </html>
