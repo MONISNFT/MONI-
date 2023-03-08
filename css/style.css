@@ -134,6 +134,13 @@ h2{
     }
 }
 
+
+.small{
+    font-size: 14px;
+    color: #4f4f54;
+    line-height: 1.4;
+}
+
 .xta_small{
     font-size: 10px;
     line-height: normal;
@@ -880,4 +887,30 @@ footer p{
 
 .airdrop .btn{
     margin-top: 4rem;
+}
+
+
+
+
+.royalties_items{
+    margin: 5.6rem auto 3.2rem;
+}
+
+@media (min-width: 1024px){
+    .royalties_items{
+        display: flex;
+    }
+}
+
+.royalties_item{
+    display: inline-block;
+    width: 33.33%;
+}
+
+.utility.description{
+    margin-bottom: 5.6rem;
+}
+
+.royalties_button{
+    margin-bottom: 8rem;
 }
