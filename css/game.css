@@ -984,7 +984,7 @@ ol.faq-entries .faq-question .question {
 #hero figure.game_logo img{
     opacity: 1;
     width: 100%;
-    max-width: 600px;
+    max-width: 520px;
     height: auto;
     object-fit: contain;
 }
