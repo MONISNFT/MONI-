@@ -1108,14 +1108,17 @@ p.small{
 }
 
 
-.xrpl_integration h1{
+.xrpl_integration h1,
+.bubble{
     background: #fff;
     padding: 2.4rem 3.2rem;
     border-radius: 8rem;
     line-height: 1;
     display: inline-block;
     box-shadow: 0 4px 16px 0 rgba(0,0,0,.1);
-    margin: 0;
+    margin: auto;
+    display: block;
+    width: fit-content;
 }
 
 @media (max-width: 991px){
@@ -1129,6 +1132,7 @@ p.small{
 
 
 .xrpl_integration:not(.header) h1,
+.pink_bubble,
 .xrpl_integration strong{
     background: rgb(251,235,175);
     background: linear-gradient(90deg, rgba(255,53,254,1) 0%, rgba(251,235,175,1) 100%);
@@ -1136,6 +1140,12 @@ p.small{
     color: #fff;
     font-family: 'axiformabold', Geneva, Verdana, sans-serif;
     margin-bottom: 3.2rem;
+    margin: 0;
+}
+
+.bubble + .pink_bubble,
+h1 + .pink_bubble{
+    margin: 3.2rem auto auto auto;
 }
 
 .xrpl_integration strong{
@@ -1377,4 +1387,30 @@ footer{
 .GDS_timeline > li.check::after {
     background: #ff35fe;
     background: linear-gradient(270deg, rgba(251,235,175,1) 0%, rgba(255,53,254,1) 100%) !important;
+}
+
+
+.powerups img{
+    width: 75%;
+    margin: 3.2rem auto;
+}
+
+
+.game_preview_text{
+    margin-top: -15%;
+}
+
+.game_preview .card{
+    padding: 0;
+    overflow: hidden;
+}
+
+.game_preview_text .card.small div{
+    width: 75%;
+}
+
+
+.game_preview video{
+    width: 100%;
+    display: block;
 }
