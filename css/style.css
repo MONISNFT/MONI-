@@ -447,6 +447,11 @@ figure img{
     background: #FED442;
 }
 
+.card.purple {
+    background-color: #7444C6;
+    color: #fff;
+}
+
 .centered{
     text-align: center;
 }
@@ -476,14 +481,14 @@ figure img{
     font-family: "axiformabold",Helvetica,Helvetica Neue,Arial;
 }
 
-.card.large p{
+.card.large:not(.game_cta) p{
     
     color: #2F2D33;
     line-height: 1.5;
 }
 
 @media (min-width: 992px){
-    .card.large p{
+    .card.large:not(.game_cta) p{
         font-size: 2.4rem;
     }
 }
@@ -935,3 +940,70 @@ footer p{
 .royalties_button{
     margin-bottom: 8rem;
 }
+
+
+
+.game_cta{
+    overflow: auto;
+    padding: 0 !important;
+}
+
+.game_cta img{
+    width: 90%;
+    max-width: 280px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 32px;
+}
+
+.game_cta video{
+    width: 100%;
+    line-height: 0;
+    display: block;
+}
+
+.game_cta + .card{
+    padding: 4rem;
+}
+
+.game_cta + .card a{
+    margin: auto;
+    width: fit-content;
+    display: block;
+    margin-top: 3.2rem;
+}
+
+.card.yellow.about_the_game{
+    background-image: url(../img/game_screenshots/about_the_game_bg.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: -15%;
+    padding-bottom: .8rem;
+    text-align: center;
+    position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .card.yellow.about_the_game h1.jumbo{
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-top: 0;
+  }
+
+  @media (max-width: 991px){
+    .game_cta img{
+        width: 30%;
+        margin-top: 2%;
+    }
+    .card.yellow.about_the_game{
+        width: 100%;
+        border-radius: 0;
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+    }
+  }
